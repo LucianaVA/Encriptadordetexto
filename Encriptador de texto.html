@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="Encriptador.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <header>
+                <h1><img src="./Assets/Vector_a.png"></h1>
+        </header>
+
+        <main>
+            <section class="principal">
+              <form class="formulario-ingresar-texto">
+                <fieldset class="caja-ingresar-texto">
+                  <textarea name="ingresar-texto" class="ingresar-texto" autofocus placeholder="Ingrese su texto aquí" cols="35" spellcheck="false"></textarea>
+                </fieldset>
+              </form>
+            </section>
+               
+        <div class="parte-baja">
+            <div class="texto-informativo">
+              <p class="simbolo-exclamacion"> 
+              </p><p class="aviso-minusculas"><img src="./Assets/bi_exclamation-circle-fill.png"> Sólo letras minúsculas y sin acentos</p>
+            </div>
+          <section class="button">
+            <button class="boton-encriptar">Encriptar</button>
+            <button class="boton-desencriptar">Desencriptar</button>
+          </section>
+        </div>
+        
+
+        </main>
+           <article>
+              <section class="encriptacion">
+                 <form class="cuadro-encriptacion">
+                    <fieldset class="reemplazar-cuadro">
+                      <div class="cuadro-muñeco">
+                        <img class="muneco" src="./Assets/Muñeco.png" alt="Persona con lupa buscando un objeto">
+                      </div>
+                      <h2 class="aviso-falta-mensaje">Ningún mensaje fue encontrado</h2>
+                      <p class="aviso-ingrese-texto">Ingresa el texto que desees encriptar o desencripta
+                    </fieldset>
+                      <span class="aviso-texto-copiado-invisible">¡Texto copiado!</span>
+                      <button class="boton-copiar-invisible">Copiar</button>
+                  </form>
+              </section>      
+          </article>
+                    
+        
+        <script src="Encriptador.js"></script>
+        <script src="botonencriptardesencriptartexto.js"></script>
+        <script src="botonencriptartexto.js"></script>
+        <script src="botondesencriptartexto.js"></script>
+        <script src="botoncopiartexto.js"></script>
+        <script src="validarentrada.js"></script>
+        <script src="funcioncopiartexto.js"></script>
+        <script src="funcionvisibilizarerror.js"></script>
+        
+    </body>
+    <footer>
+      <p class="copyright">&copy Copyright Encriptador Luciana V 2023</p>
+    </footer>
+    
+
+</html>
